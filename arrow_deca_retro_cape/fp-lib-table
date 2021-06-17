@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name custom_parts)(type KiCad)(uri ${KIPRJMOD}/libraries/custom_parts/custom_parts.pretty)(options "")(descr ""))
+  (lib (name AS4C32M16SB-7TIN)(type KiCad)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/AS4C32M16SB7TIN/KiCAD/2021-06-16_01-23-01/footprints.pretty)(options "")(descr ""))
 )

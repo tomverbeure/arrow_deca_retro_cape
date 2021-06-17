@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name custom_parts)(type Legacy)(uri ${KIPRJMOD}/libraries/custom_parts/custom_parts.lib)(options "")(descr ""))
+  (lib (name AS4C32M16SA7TIN)(type Legacy)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/ul_AS4C32M16SA7TIN/KiCAD/2021-06-16_01-23-01/2021-06-16_01-23-01.lib)(options "")(descr ""))
+  (lib (name AS4C32M16SB7TIN)(type Legacy)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/AS4C32M16SB7TIN/KiCAD/2021-06-16_01-23-01/2021-06-16_01-23-01.lib)(options "")(descr ""))
 )
