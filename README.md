@@ -23,3 +23,5 @@
 * [SDRAM Termination discussion](https://www.electronicspoint.com/forums/threads/sdram-clock-termination.19018/)
 * [SDRAM Termination discussion](https://designhelp.fedevel.com/forum/test/pcb-layout/82-sdr-sdram-layout-recommendations)
 * [SDRAM Termination question on Stackexchange](https://electronics.stackexchange.com/questions/38718/termination-resistors-are-they-needed)
+
+* [Waveshare VGA PS/2 Board](https://www.waveshare.com/vga-ps2-board.htm)

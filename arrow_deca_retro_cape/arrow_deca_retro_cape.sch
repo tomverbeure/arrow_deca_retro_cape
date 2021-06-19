@@ -1586,4 +1586,102 @@ Wire Wire Line
 	14950 5600 14950 5700
 Wire Wire Line
 	14600 5700 14950 5700
+$Comp
+L Connector:DB15_Female_HighDensity_MountingHoles J?
+U 1 1 60D02E33
+P 2500 9700
+F 0 "J?" H 2500 10567 50  0000 C CNN
+F 1 "DB15_Female_HighDensity_MountingHoles" H 2500 10476 50  0000 C CNN
+F 2 "" H 1550 10100 50  0001 C CNN
+F 3 " ~" H 1550 10100 50  0001 C CNN
+	1    2500 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D07E5D
+P 2500 10550
+F 0 "#PWR?" H 2500 10300 50  0001 C CNN
+F 1 "GND" H 2505 10377 50  0000 C CNN
+F 2 "" H 2500 10550 50  0001 C CNN
+F 3 "" H 2500 10550 50  0001 C CNN
+	1    2500 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 10400 2500 10450
+Wire Wire Line
+	2800 9700 3400 9700
+Wire Wire Line
+	2800 9300 3400 9300
+Wire Wire Line
+	2800 9500 3400 9500
+Wire Wire Line
+	2800 9900 3400 9900
+Wire Wire Line
+	2800 10100 3400 10100
+Wire Wire Line
+	2200 10100 2050 10100
+Wire Wire Line
+	2050 10100 2050 10000
+Wire Wire Line
+	2050 9200 2200 9200
+Wire Wire Line
+	2050 10100 2050 10450
+Wire Wire Line
+	2050 10450 2500 10450
+Connection ~ 2050 10100
+Connection ~ 2500 10450
+Wire Wire Line
+	2500 10450 2500 10550
+Wire Wire Line
+	2200 9400 2050 9400
+Connection ~ 2050 9400
+Wire Wire Line
+	2050 9400 2050 9200
+Wire Wire Line
+	2200 9600 2050 9600
+Connection ~ 2050 9600
+Wire Wire Line
+	2050 9600 2050 9400
+Wire Wire Line
+	2200 10000 2050 10000
+Connection ~ 2050 10000
+Wire Wire Line
+	2050 9600 2050 10000
+Wire Wire Line
+	1350 9300 2200 9300
+Wire Wire Line
+	1350 9500 2200 9500
+Wire Wire Line
+	1350 9700 2200 9700
+Wire Wire Line
+	1350 9800 2200 9800
+NoConn ~ 3400 9300
+NoConn ~ 3400 9500
+Text Label 1450 9300 0    50   ~ 0
+VGA_R
+Text Label 1450 9500 0    50   ~ 0
+VGA_G
+Text Label 1450 9700 0    50   ~ 0
+VGA_B
+Text Label 1450 9800 0    50   ~ 0
+VGA_PWR
+NoConn ~ 1350 9800
+Wire Wire Line
+	1350 9900 2200 9900
+Text Label 1450 9900 0    50   ~ 0
+VGA_ID2
+NoConn ~ 1350 9900
+Text Label 2950 10100 0    50   ~ 0
+VGA_SCL
+Text Label 2950 9900 0    50   ~ 0
+VGA_VSYNC
+Text Label 2950 9700 0    50   ~ 0
+VGA_HSYNC
+Text Label 2950 9500 0    50   ~ 0
+VGA_SDA
+Text Label 2950 9300 0    50   ~ 0
+VGA_ID0
+NoConn ~ 3400 10100
 $EndSCHEMATC
