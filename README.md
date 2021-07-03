@@ -4,9 +4,9 @@
 
 ## Different Mister SDRAM Versions
 
-    * [SDRAM_SRAM](https://github.com/MiSTer-devel/Hardware_MiSTer/tree/master/Addons/SDRAM_SRAM)
+* [SDRAM_SRAM](https://github.com/MiSTer-devel/Hardware_MiSTer/tree/master/Addons/SDRAM_SRAM)
 
-        ![SDRAM SRAM Schematic](./doc/sdram_sram.png)
+    ![SDRAM SRAM Schematic](./doc/sdram_sram.png)
         
 
 
