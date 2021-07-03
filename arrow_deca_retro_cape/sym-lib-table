@@ -3,4 +3,6 @@
   (lib (name AS4C32M16SA7TIN)(type Legacy)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/ul_AS4C32M16SA7TIN/KiCAD/2021-06-16_01-23-01/2021-06-16_01-23-01.lib)(options "")(descr ""))
   (lib (name AS4C32M16SB7TIN)(type Legacy)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/AS4C32M16SB7TIN/KiCAD/2021-06-16_01-23-01/2021-06-16_01-23-01.lib)(options "")(descr ""))
   (lib (name vga_db15_female)(type Legacy)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/db15_female/181-015-213R561.lib)(options "")(descr ""))
+  (lib (name arrow_deca_retro_cape-rescue)(type Legacy)(uri ${KIPRJMOD}/arrow_deca_retro_cape-rescue.lib)(options "")(descr ""))
+  (lib (name MD60SM)(type Legacy)(uri /home/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/ul_MD60SM/KiCAD/2021-07-02_23-52-55/2021-07-02_23-52-55.lib)(options "")(descr ""))
 )

@@ -1,4 +1,6 @@
 (fp_lib_table
   (lib (name custom_parts)(type KiCad)(uri ${KIPRJMOD}/libraries/custom_parts/custom_parts.pretty)(options "")(descr ""))
-  (lib (name AS4C32M16SB-7TIN)(type KiCad)(uri /Users/tom/projects/arrow_deca_retro_cape/arrow_deca_retro_cape/libraries/AS4C32M16SB7TIN/KiCAD/2021-06-16_01-23-01/footprints.pretty)(options "")(descr ""))
+  (lib (name AS4C32M16SB7TIN)(type KiCad)(uri ${KIPRJMOD}/libraries/AS4C32M16SB7TIN/KiCAD/2021-06-16_01-23-01/AS4C32M16SB7TIN.pretty)(options "")(descr ""))
+  (lib (name MD-60SM)(type KiCad)(uri ${KIPRJMOD}/libraries/ul_MD60SM/KiCAD/2021-07-02_23-52-55/MD-60SM.pretty)(options "")(descr ""))
+  (lib (name snapeda)(type KiCad)(uri ${KIPRJMOD}/libraries/snapeda/footprints.pretty)(options "")(descr ""))
 )
