@@ -2,11 +2,23 @@
 # DECA Retro Cape
 
 
+## Different Mister SDRAM Versions
+
+    * [SDRAM_SRAM](https://github.com/MiSTer-devel/Hardware_MiSTer/tree/master/Addons/SDRAM_SRAM)
+
+        ![SDRAM SRAM Schematic](./doc/sdram_sram.png)
+        
+
+
+
 ## References
 
 * [Hardware addons for MiSTer - SDR SDRAM daughter board](https://github.com/MiSTer-devel/Hardware_MiSTer#sdr-sdram-daughter-board)
 
     Discusses different board versions and SDRAM types, clock speeds.
+
+    This repo also contains the Altium designs for the different add-ons. They can be viewed with the
+    [Altium Online Schematic and PCB Viewer](https://www.altium.com/viewer/).
 
 * [Addon Board Repo on GitHub](https://github.com/MiSTer-devel/Hardware_MiSTer/tree/master/Addons)
 
