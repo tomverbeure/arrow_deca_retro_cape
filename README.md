@@ -1,6 +1,33 @@
 
 # DECA Retro Cape
 
+![Arrow DECA Retro Cape 3D](./doc/arrow_deca_retro_cape_3d.png) 
+
+This project is a plug-in PCB for the Arrow DECA FPGA board to extend it with the
+following features:
+
+* 2 16Mx16 SDRAMs
+
+    Compatible with the Mister SDRAM xsds. 
+
+* 1 PS/2 Keyboard interface
+
+    Mouse will not work, because it's a unidirectional interface.
+
+* 2 Atari Joystick DB9 ports 
+
+* 1 general purupose PMOD connector
+
+Like the SDRAM xsds board, I'm using a 5V to 3.3V LDO instead of relying on the 3V3
+supply of the DECA board itself.
+
+**Status: sent to JLCPCB. Not tested...**
+
+
+# Various Notes
+
+The information below is not always relevant, but just stuff that I gathered while
+working on this PCB...
 
 ## Different Mister SDRAM Versions
 
@@ -18,7 +45,9 @@ There are 2 main variants of SDRAM models:
     save 2 pins on the connector.
 
     By strapping CKE to high, you can't use certain low power modes of the SDRAM, but
-    that's not a major issue for a Mister-like design.
+    that's not a major issue for a Mister-like design. However, the SDRAM datasheet
+    also says that CKE must be low which VDD is being powered up, so that might
+    be a violation depending on the overall power sequencing.
 
 Because the second variant requires 3 pins less on a connector, it's now the most used option.
 
@@ -64,7 +93,8 @@ Because the second variant requires 3 pins less on a connector, it's now the mos
 
     * Extra Slim, Dual-chip
     * Logically identical to SDRAM xsd.
-    * Uses DE10-Nano GPIO1 pin 11 (5V) in combination with a 3V3 LDO to power the SDRAMs for
+    * Uses DE10-Nano GPIO1 pin 11 (5V) in combination with an 
+      [LM1117-3V3 LDO](https://www.ti.com/lit/ds/symlink/lm1117.pdf) to power the SDRAMs for
       higher noise resistance, instead of using GPIO1 pin 29 (3V3), which was used in all
       previous designs.
 
@@ -73,6 +103,14 @@ Because the second variant requires 3 pins less on a connector, it's now the mos
     ![SDRAM xsds schematic](./doc/sdram_xsds.png)
 
 
+## Ferrite Bead Info
+
+* [Analog Devices - Ferrite Beads Demystified](https://www.analog.com/media/en/technical-documentation/application-notes/AN-1368.pdf)
+* [Choosing and Using Ferrite Beads](https://www.allaboutcircuits.com/technical-articles/choosing-and-using-ferrite-beads/)
+* [TI - High-Speed DSP Systems Design- Reference Guide](https://www.ti.com.cn/cn/lit/ug/spru889/spru889.pdf)
+* [Altium - Everything You Need to Know about Ferrite Beads](https://resources.altium.com/p/everything-you-need-to-know-about-ferrite-beads)
+
+    Argues against its use.
 
 ## References
 
@@ -98,5 +136,6 @@ Because the second variant requires 3 pins less on a connector, it's now the mos
 * [SDRAM Termination discussion](https://www.electronicspoint.com/forums/threads/sdram-clock-termination.19018/)
 * [SDRAM Termination discussion](https://designhelp.fedevel.com/forum/test/pcb-layout/82-sdr-sdram-layout-recommendations)
 * [SDRAM Termination question on Stackexchange](https://electronics.stackexchange.com/questions/38718/termination-resistors-are-they-needed)
+* [Discussion about SDRAM xsds v2.9](https://misterfpga.org/viewtopic.php?t=2480)
 
 * [Waveshare VGA PS/2 Board](https://www.waveshare.com/vga-ps2-board.htm)

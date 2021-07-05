@@ -66,17 +66,6 @@ Wire Wire Line
 	1050 1350 1050 1250
 Wire Wire Line
 	1050 1250 1850 1250
-$Comp
-L power:+3V3 #PWR0103
-U 1 1 609EC73B
-P 1450 1150
-F 0 "#PWR0103" H 1450 1000 50  0001 C CNN
-F 1 "+3V3" H 1465 1323 50  0000 C CNN
-F 2 "" H 1450 1150 50  0001 C CNN
-F 3 "" H 1450 1150 50  0001 C CNN
-	1    1450 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 1350 1450 1150
 Wire Wire Line
@@ -167,13 +156,13 @@ Wire Wire Line
 Wire Wire Line
 	2100 2750 1450 2750
 Text Label 1500 2050 0    50   ~ 0
-GPIO1_D0
+PMOD_D0
 Text Label 1500 1950 0    50   ~ 0
-GPIO1_D2
+PMOD_D2
 Text Label 1500 1850 0    50   ~ 0
-GPIO1_D4
+PMOD_D4
 Text Label 1500 1750 0    50   ~ 0
-GPIO1_D6
+PMOD_D6
 Text Label 1500 2450 0    50   ~ 0
 J0_PADDLE_B
 Text Label 1500 2150 0    50   ~ 0
@@ -209,27 +198,25 @@ Wire Wire Line
 Wire Wire Line
 	3250 2650 2600 2650
 Text Label 2700 2050 0    50   ~ 0
-GPIO1_D1
+PMOD_D1
 Text Label 2700 1850 0    50   ~ 0
-GPIO1_D5
+PMOD_D5
 Text Label 2700 1750 0    50   ~ 0
-GPIO1_D7
+PMOD_D7
 Text Label 1500 2250 0    50   ~ 0
 J0_DOWN
-Text Label 1500 3250 0    50   ~ 0
+Text Label 2700 3250 0    50   ~ 0
 J1_PADDLE_B
 Text Label 2700 2650 0    50   ~ 0
 J1_RIGHT
 Text Label 2700 2450 0    50   ~ 0
 J1_UP
 Text Label 2700 1950 0    50   ~ 0
-GPIO1_D3
+PMOD_D3
 Wire Wire Line
 	2100 3250 1450 3250
 Wire Wire Line
 	3250 3250 2600 3250
-Text Label 2700 3250 0    50   ~ 0
-GPIO1_D22
 Text Label 2700 2750 0    50   ~ 0
 VCC1P8_VCCADC
 Wire Wire Line
@@ -317,7 +304,7 @@ L Connector_Generic:Conn_02x06_Top_Bottom J1
 U 1 1 60AF7847
 P 2200 6400
 F 0 "J1" H 2250 6817 50  0000 C CNN
-F 1 "PMOD_A" H 2250 6726 50  0000 C CNN
+F 1 "PMOD" H 2250 6726 50  0000 C CNN
 F 2 "custom_parts:PMOD_Female_Horizontal" H 2200 6400 50  0001 C CNN
 F 3 "~" H 2200 6400 50  0001 C CNN
 	1    2200 6400
@@ -374,37 +361,37 @@ F 3 "" H 3350 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1450 6500 0    50   ~ 0
-GPIO1_D1
+PMOD_D1
 Wire Wire Line
 	2000 6500 1350 6500
 Wire Wire Line
 	3150 6500 2500 6500
 Text Label 2600 6500 0    50   ~ 0
-GPIO1_D0
+PMOD_D0
 Wire Wire Line
 	2000 6400 1350 6400
 Text Label 1450 6400 0    50   ~ 0
-GPIO1_D3
+PMOD_D3
 Wire Wire Line
 	3150 6400 2500 6400
 Text Label 2600 6400 0    50   ~ 0
-GPIO1_D2
+PMOD_D2
 Wire Wire Line
 	2000 6300 1350 6300
 Text Label 1450 6300 0    50   ~ 0
-GPIO1_D5
+PMOD_D5
 Wire Wire Line
 	3150 6300 2500 6300
 Text Label 2600 6300 0    50   ~ 0
-GPIO1_D4
+PMOD_D4
 Wire Wire Line
 	3150 6200 2500 6200
 Text Label 2600 6200 0    50   ~ 0
-GPIO1_D6
+PMOD_D6
 Wire Wire Line
 	2000 6200 1350 6200
 Text Label 1450 6200 0    50   ~ 0
-GPIO1_D7
+PMOD_D7
 $Comp
 L arrow_deca_retro_cape-rescue:AS4C32M16SB-7TIN-AS4C32M16SB7TIN U1
 U 1 1 6113978E
@@ -2387,10 +2374,6 @@ Wire Wire Line
 Connection ~ 5850 10150
 Wire Wire Line
 	5850 10150 6050 10150
-NoConn ~ 6350 2850
-NoConn ~ 4550 2850
-NoConn ~ 4550 1250
-NoConn ~ 4550 1350
 NoConn ~ 3250 1650
 NoConn ~ 1450 1650
 NoConn ~ 1450 2850
@@ -2400,7 +2383,7 @@ NoConn ~ 1450 3150
 NoConn ~ 3250 2950
 NoConn ~ 3250 3050
 NoConn ~ 3250 3150
-NoConn ~ 3250 3250
+NoConn ~ 1450 3250
 Wire Wire Line
 	5250 10650 5350 10650
 Connection ~ 5250 10650
@@ -2475,4 +2458,207 @@ Wire Wire Line
 Connection ~ 11750 4000
 Wire Wire Line
 	11750 4000 11750 4100
+$Comp
+L power:GND #PWR0103
+U 1 1 6106D07B
+P 14150 1750
+F 0 "#PWR0103" H 14150 1500 50  0001 C CNN
+F 1 "GND" H 14155 1577 50  0000 C CNN
+F 2 "" H 14150 1750 50  0001 C CNN
+F 3 "" H 14150 1750 50  0001 C CNN
+	1    14150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0115
+U 1 1 61101A0A
+P 1450 1150
+F 0 "#PWR0115" H 1600 1100 50  0001 C CNN
+F 1 "+3.3VP" H 1470 1293 50  0000 C CNN
+F 2 "" H 1450 1150 50  0001 C CNN
+F 3 "" H 1450 1150 50  0001 C CNN
+	1    1450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0116
+U 1 1 6148EA16
+P 14650 850
+F 0 "#PWR0116" H 14650 700 50  0001 C CNN
+F 1 "+3V3" H 14665 1023 50  0000 C CNN
+F 2 "" H 14650 850 50  0001 C CNN
+F 3 "" H 14650 850 50  0001 C CNN
+	1    14650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 1050 14650 850 
+Wire Wire Line
+	15300 1050 14650 1050
+Wire Wire Line
+	14150 1650 14150 1750
+Connection ~ 14150 1650
+Wire Wire Line
+	13750 1650 14150 1650
+Wire Wire Line
+	13750 1600 13750 1650
+Wire Wire Line
+	14150 1450 14150 1650
+Wire Wire Line
+	13750 1150 13850 1150
+Connection ~ 13750 1150
+Wire Wire Line
+	13750 1300 13750 1150
+$Comp
+L Device:C C18
+U 1 1 612C6C71
+P 13750 1450
+F 0 "C18" H 13865 1496 50  0000 L CNN
+F 1 "10uF" H 13865 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13788 1300 50  0001 C CNN
+F 3 "~" H 13750 1450 50  0001 C CNN
+	1    13750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 1150 15300 1150
+Wire Wire Line
+	14950 950  15300 950 
+Wire Wire Line
+	14950 850  14950 950 
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 61199143
+P 15500 1050
+F 0 "J7" H 15580 1092 50  0000 L CNN
+F 1 "Conn_01x03" H 15580 1001 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 15500 1050 50  0001 C CNN
+F 3 "~" H 15500 1050 50  0001 C CNN
+	1    15500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0117
+U 1 1 6114CA0A
+P 14950 850
+F 0 "#PWR0117" H 15100 800 50  0001 C CNN
+F 1 "+3.3VP" H 14970 993 50  0000 C CNN
+F 2 "" H 14950 850 50  0001 C CNN
+F 3 "" H 14950 850 50  0001 C CNN
+	1    14950 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 1150 13750 1150
+Wire Wire Line
+	13650 1100 13650 1150
+$Comp
+L power:+5V #PWR0118
+U 1 1 60FD94AF
+P 13650 1100
+F 0 "#PWR0118" H 13650 950 50  0001 C CNN
+F 1 "+5V" H 13665 1273 50  0000 C CNN
+F 2 "" H 13650 1100 50  0001 C CNN
+F 3 "" H 13650 1100 50  0001 C CNN
+	1    13650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U4
+U 1 1 60FD8327
+P 14150 1150
+F 0 "U4" H 14150 1392 50  0000 C CNN
+F 1 "LM1117-3.3" H 14150 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14150 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 14150 1150 50  0001 C CNN
+	1    14150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 61573FFC
+P 14650 1450
+F 0 "C19" H 14765 1496 50  0000 L CNN
+F 1 "100uF" H 14765 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14688 1300 50  0001 C CNN
+F 3 "~" H 14650 1450 50  0001 C CNN
+	1    14650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 1300 14650 1050
+Connection ~ 14650 1050
+Wire Wire Line
+	14650 1600 14650 1650
+Wire Wire Line
+	14650 1650 14150 1650
+Text Notes 14850 1300 0    50   ~ 0
+Place jumper close to LDO
+Text Label 14700 1150 0    50   ~ 0
+3V3_LDO
+Text Label 4650 1250 0    50   ~ 0
+GPIO0
+Text Label 4650 1350 0    50   ~ 0
+GPIO1
+Text Label 4650 2850 0    50   ~ 0
+GPIO2
+Text Label 5900 2850 0    50   ~ 0
+GPIO3
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 6178A509
+P 7800 1300
+F 0 "J8" H 7880 1292 50  0000 L CNN
+F 1 "Conn_01x06" H 7880 1201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7800 1300 50  0001 C CNN
+F 3 "~" H 7800 1300 50  0001 C CNN
+	1    7800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 617D9253
+P 7450 1650
+F 0 "#PWR0119" H 7450 1400 50  0001 C CNN
+F 1 "GND" H 7455 1477 50  0000 C CNN
+F 2 "" H 7450 1650 50  0001 C CNN
+F 3 "" H 7450 1650 50  0001 C CNN
+	1    7450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1650 7450 1600
+Wire Wire Line
+	7450 1600 7600 1600
+$Comp
+L power:+3V3 #PWR0120
+U 1 1 61872FF3
+P 7450 1050
+F 0 "#PWR0120" H 7450 900 50  0001 C CNN
+F 1 "+3V3" H 7465 1223 50  0000 C CNN
+F 2 "" H 7450 1050 50  0001 C CNN
+F 3 "" H 7450 1050 50  0001 C CNN
+	1    7450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1050 7450 1100
+Wire Wire Line
+	7450 1100 7600 1100
+Wire Wire Line
+	7600 1200 6950 1200
+Wire Wire Line
+	7600 1300 6950 1300
+Text Label 7050 1200 0    50   ~ 0
+GPIO0
+Text Label 7050 1300 0    50   ~ 0
+GPIO1
+Wire Wire Line
+	7600 1400 6950 1400
+Wire Wire Line
+	7600 1500 6950 1500
+Text Label 7050 1400 0    50   ~ 0
+GPIO2
+Text Label 7050 1500 0    50   ~ 0
+GPIO3
 $EndSCHEMATC
