@@ -1,6 +1,8 @@
 
 # DECA Retro Cape
 
+**IMPORTANT: this PCB is unusuable due to an incorrect spacing between the connectors!!!**
+
 ![Arrow DECA Retro Cape 3D](./doc/arrow_deca_retro_cape_3d.png) 
 
 This project is a plug-in PCB for the Arrow DECA FPGA board to extend it with the
